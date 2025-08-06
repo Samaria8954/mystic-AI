@@ -154,7 +154,7 @@
     transform: translate(-50%, -50%);
     width: 225%;
     height: 162%;
-    background: url(images/halo-blob.png) no-repeat center center;
+    background: url(Images/halo-blob.png) no-repeat center center;
     background-size: contain;
     z-index: 0;
 
