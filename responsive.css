@@ -1,0 +1,147 @@
+/*  VIEW 768px to 991px */
+@media (min-width:576px) and (max-width:768px){
+.heroSection h4 {
+    font-size: 4vw;
+    font-weight: 500;
+    font-family: Custom;
+}
+.heroSection h6 {
+    font-family: Mysatoshi;
+   text-align: justify;
+   text-align-last:center ;
+}
+.hero-content {
+    font-size: 15px;
+    justify-content: start;
+    text-align: center;
+}
+.section2 h6 {
+    font-family: MYFONT;
+    font-size: 1.9vw;
+    margin: 10px 0px 30px 0px;
+}
+.section2 h1 {
+    font-family: Custom;
+    font-weight: 500;
+    font-size: 4vw;
+}
+.Products {
+    flex: 1 1 30%;
+    max-width: 30%;
+    aspect-ratio: 1 / 1;
+    background-color: #EFEFEF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+.sell-products {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+ .section3 h1 {
+    font-family: Custom;
+    font-weight: 500;
+    font-size: 3.8vw;
+}
+.sub-31 h3 {
+    text-align: start;
+    font-family: Custom;
+    font-size: 2.8vw;
+}
+.sub-31 h3 {
+    text-align: start;
+    font-family: Custom;
+    font-size: 3.3vw;
+}
+.sub-32 a {
+    color: #7422DD;
+    text-decoration: none;
+    font-size:2.5vw;
+}
+}
+
+
+
+
+
+@media (min-width:768px) and (max-width:991px){
+.heroSection h4 {
+    font-size: 4vw;
+    font-weight: 500;
+    font-family: Custom;
+}
+.heroSection h6 {
+    font-family: Mysatoshi;
+   text-align: justify;
+   text-align-last:center ;
+}
+.hero-content {
+    font-size: 15px;
+    justify-content: start;
+    text-align: center;
+}
+.section2 h6 {
+    font-family: MYFONT;
+    font-size: 1.7vw;
+    margin: 10px 0px 30px 0px;
+}
+.section2 h1 {
+    font-family: Custom;
+    font-weight: 500;
+    font-size: 3.5vw;
+}
+
+.Products {
+    flex: 1 1 31%;
+    max-width: 31%;
+    aspect-ratio: 1 / 1;
+    background-color: #EFEFEF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+.sell-products {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.section3 h1 {
+    font-family: Custom;
+    font-weight: 500;
+    font-size: 3.5vw;
+}
+.sub-31 {
+    text-align: start;
+    font-family: Custom;
+    font-size: 3vw;
+}
+.sub-31 h3 {
+    text-align: start;
+    font-family: Custom;
+    font-size: 2.8vw;
+}
+.sub-32 a {
+    color: #7422DD;
+    text-decoration: none;
+    font-size:1.7vw;
+}
+}

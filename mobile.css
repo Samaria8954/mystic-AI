@@ -1,0 +1,173 @@
+/* MOBIle view upto 480 */
+@media(min-width:320px) and (max-width:576px) {
+    .heroSection h4 {
+        font-size: 6vw;
+        font-weight: 500;
+        font-family: Custom;
+    }
+
+    .heroSection h6 {
+        font-family: Mysatoshi;
+        text-align: justify;
+        text-align-last: center;
+    }
+
+    .hero-content {
+        font-size: 15px;
+        justify-content: start;
+        text-align: start;
+    }
+
+    .carousel-card {
+        flex: 0 0 34%;
+        /* 3 images per screen */
+        padding: 8px;
+    }
+
+    .carousel-caption-text {
+        font-size: 3.2vw;
+    }
+
+    .carousel-card.active::before {
+        width: 200%;
+        height: 160%;
+        left: 50%;
+        top: 50%;
+    }
+
+    .carousel-track {
+        padding-top: 5%;
+        display: flex;
+        transition: transform 0.5s ease;
+        will-change: transform;
+    }
+
+    .section2 h1 {
+        font-family: Custom;
+        font-weight: 500;
+        font-size: 4.7vw;
+    }
+
+    .section2 h6 {
+        font-family: MYFONT;
+        font-size: 13px;
+        margin: 10px 10px 30px 10px;
+    }
+
+
+}
+
+
+@media(min-width:320px) and (max-width:420px) {
+    .Products {
+        flex: 1 1 100%;
+        max-width: 100%;
+        aspect-ratio: 1 / 1;
+        background-color: #EFEFEF;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 12px;
+        padding-top: 10px;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+    }
+
+    .sell-products {
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .section3 h1 {
+        font-family: Custom;
+        font-weight: 500;
+        font-size: 5.2vw;
+        text-align: center;
+    }
+
+    .sub-31 h3 {
+        text-align: start;
+        font-family: Custom;
+        font-size: 4.5vw;
+    }
+     .Clothing {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .C-B {
+        flex: 1 1 100%;
+        max-width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+@media(min-width:420px) and (max-width:576px) {
+    .Products {
+        flex: 1 1 47%;
+        max-width: 47%;
+        aspect-ratio: 1 / 1;
+        background-color: #EFEFEF;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 12px;
+        padding-top: 10px;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+    }
+
+    .sell-products {
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .section3 h1 {
+        font-family: Custom;
+        font-weight: 500;
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .sub-31 h3 {
+        text-align: start;
+        font-family: Custom;
+        font-size: 4vw;
+    }
+
+    .Clothing {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .C-B {
+        flex: 1 1 45%;
+        max-width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
