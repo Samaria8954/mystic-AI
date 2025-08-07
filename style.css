@@ -1,0 +1,2647 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+.Body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:0px;
+    margin-right:0px;
+    margin-left: 0px;
+}
+
+.Background {
+    background-image: url(Images/background-texture.png);
+
+}
+
+.header {
+
+    font-family: Satoshi;
+    color: black;
+}
+
+@font-face {
+    font-family: Satoshi;
+    src: url(WEBFONTS/Satoshi-Black.otf);
+}
+
+.nav-item a {
+    font-size: 14px;
+    font-family: Mysatoshi;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+}
+
+.nav-item a:hover {
+    font-size: 14px;
+    font-family: Mysatoshi;
+    font-weight: 600;
+    color: #7422DD;
+    font-style: normal;
+}
+
+.d-flex button {
+    background-color: #7422DD;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-family: Mysatoshi;
+}
+
+.d-flex button:hover,
+.d-flex button:focus {
+    background-color: #7422DD;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-family: Mysatoshi;
+}
+
+@font-face {
+    font-family: Mysatoshi;
+    src: url(WEBFONTS/Satoshi-Light.otf);
+}
+
+.d-flex i {
+    color: white;
+    margin-left: 5px;
+}
+
+.heroSection {
+    text-align: center;
+}
+
+.heroSection h4 {
+    font-size: 3vw;
+    font-weight: 500;
+    font-family: Custom;
+}
+
+@font-face {
+    font-family: Custom;
+    src: url(WEBFONTS/Satoshi-Medium.otf);
+}
+
+.heroSection h6 {
+    font-family: Mysatoshi;
+}
+
+.hero-content {
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+@font-face {
+    font-family: MYFONT;
+    src: url(WEBFONTS/Satoshi-Regular.otf);
+}
+
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+
+.carousel {
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+#customCarousel {
+    padding-top: 6%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.carousel-card {
+    flex: 0 0 20.1%;
+    padding: 10px;
+    font-family: MYFONT;
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+
+}
+
+.carousel-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+
+}
+
+
+
+.carousel-card.active::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 225%;
+    height: 162%;
+    background: url(Images/halo-blob.png) no-repeat center center;
+    background-size: contain;
+    z-index: 0;
+
+}
+
+.carousel-card.active img {
+    transform: scale(1.12);
+    border-radius: 12px;
+    overflow: visible;
+}
+
+
+.carousel-caption-text {
+    font-size: 1.2vw;
+    font-family: MYFONT;
+}
+
+.images-3 {
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.images-3 img {
+    width: 150px;
+    margin-top: 10%;
+}
+
+.star5 {
+    font-family: Custom;
+    text-align: center;
+}
+
+.Cerousel {
+    padding-bottom: 6%;
+}
+
+.image-carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-track {
+    animation: scroll 20s linear infinite;
+}
+
+.slide-track img {
+    border-radius: 50px;
+    padding: 20px 35px;
+    background-color: #EBEFFF;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.Sub-section {
+    text-align: center;
+}
+
+.section2 h1 {
+    font-family: Custom;
+    font-weight: 500;
+    font-size: 3vw;
+}
+
+.section2 h1 span {
+    font-weight: bold;
+    font-family: Satoshi;
+}
+
+.section2 h6 {
+    font-family: MYFONT;
+    font-size: 1.3vw;
+    margin: 10px 0px 30px 0px;
+}
+
+.sell-products {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.Products {
+    flex: 1 1 18%;
+    max-width: 19%;
+    aspect-ratio: 1 / 1;
+    background-color: #EFEFEF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+}
+
+.Products img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.scale-fix {
+    transform: scale(0.7);
+}
+
+.section2 h6 {
+    text-align: center;
+    font-family: MYFONT;
+}
+
+.section3 h1 {
+    font-family: Custom;
+    font-weight: 500;
+    font-size: 3.2vw;
+    text-align: center;
+}
+
+.section3 h1 span {
+    font-weight: bold;
+    font-family: Satoshi;
+}
+
+.sub-3 {
+    text-align: center;
+}
+
+.sub-31 h3 {
+    text-align: start;
+    font-family: Custom;
+    font-size: 2.3vw;
+}
+
+.sub-32 {
+    font-family: Custom;
+    font-size: 15px;
+    text-align: end;
+}
+
+.sub-32 a {
+    color: #7422DD;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.Clothing {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.C-B {
+    flex: 1 1 22%;
+    max-width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.C-B img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.C-B h5 {
+    margin-top: 20px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    font-family: newSatoshi;
+
+}
+
+@font-face {
+    font-family: newSatoshi;
+    src: url(WEBFONTS/Satoshi-Bold.otf);
+}
+
+.C-B h5:hover {
+    color: #7422DD;
+}
+
+.works-with-box {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin-bottom: 10%;
+}
+
+.works-heading {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    color: #1C1340;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 0 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.works-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    padding: 3% 2% 2% 2%;
+    flex-wrap: wrap;
+}
+
+.works-images img {
+    width: 17%;
+    height: auto;
+    object-fit: contain;
+}
+
+.Phrase {
+    position: relative;
+}
+
+.heading {
+    justify-content: space-between;
+}
+
+.heading1 {
+    padding-top: 110px;
+}
+
+.heading1 h2 {
+    font-family: Custom;
+}
+
+.heading1 h2 span {
+    font-weight: 800;
+    font-family: MYFONT;
+    color: #7422DD;
+}
+
+.heading1 h6 {
+    font-weight: 350;
+    font-size: 1.34vw;
+    margin-top: 15px;
+
+}
+
+.input1 {
+    background-image: url(Images/halogens-yellow.png), url(Images/halogens-purple.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    min-height: 380px;
+}
+
+.input1-group {
+    position: relative;
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.input1 input {
+    padding: 10px 90px 10px 10px;
+    border: none;
+    width: 100%;
+}
+
+.input1-group input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+.input1 button {
+    color: white;
+    background-color: #7422DD;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    white-space: nowrap;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input1 button:hover,
+.input1 button:focus,
+.input1 button:active {
+    background-color: #5c1dc2;
+    color: white;
+    outline: none;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    white-space: nowrap;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.generate-btn {
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.Dotted {
+    position: absolute;
+    top: 260px;
+    left: 210px;
+}
+
+.Dotted img {
+    width: 100%;
+}
+
+.heading2 {
+    padding-top: 60px;
+}
+
+.heading21 {
+    background-image: url(Images/halogens-yellow.png), url(Images/halogens-purple.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+}
+
+.img1 img {
+    width: 100%;
+    height: 75%;
+}
+
+.img2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.img3 img {
+    width: 100%;
+    height: 80%;
+}
+
+.heading22 {
+    padding-top: 140px;
+}
+
+.heading22 h2 {
+    font-family: Custom;
+}
+
+.heading22 h2 span {
+    font-weight: 800;
+    font-family: Custom;
+    color: #7422DD;
+}
+
+.heading22 h6 {
+    font-weight: 350;
+    font-size: 1.34vw;
+    margin-top: 15px;
+}
+
+.Dotted2 {
+    position: absolute;
+    top: 730px;
+    left: 210px;
+}
+
+.Dotted2 img {
+    width: 100%;
+}
+
+.heading3 {
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.heading31 {
+    padding-top: 165px;
+}
+
+.heading31 h2 {
+    font-family: Custom;
+}
+
+.heading31 h2 span {
+    font-weight: 800;
+    font-family: Custom;
+    color: #7422DD;
+}
+
+.heading31 h6 {
+    font-weight: 350;
+    font-size: 1.34vw;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.heading32 {
+    background-image: url(Images/halogens-yellow3.png), url(Images/halogens-purple3.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.TAB-bg {
+    width: 60% !important;
+}
+
+.close-btn {
+    background-color: #E6E6EB;
+    border-radius: 50%;
+    padding: 4px 6px;
+    color: black;
+    border: none;
+    font-size: small;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    float: right;
+}
+
+/* Default state (non-active tab) */
+#original-tab,
+#removed-tab {
+    font-size: 11px;
+    border: none;
+    outline: none;
+    color: black;
+    font-family: Custom;
+    background-color: transparent;
+}
+
+/* Active tab (Bootstrap adds .active automatically) */
+#original-tab.active,
+#removed-tab.active {
+    color: #7422DD;
+    border-bottom: 2px solid #7422DD;
+    background-color: transparent;
+}
+
+.Tab-img img {
+    width: 50%;
+    height: auto;
+}
+
+.image-card {
+    padding: 30px;
+    background-color: #7422DD;
+    width: 100%;
+    height: auto;
+}
+
+.transparent-bg {
+    background-color: transparent;
+}
+
+.button-group .btn {
+    padding: 8px 20px;
+    font-size: 11px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.btn-delete {
+    background-color: Purple/purple-50;
+    color: #7422DD;
+    border: none;
+    font-size: 11px;
+    padding: 5px;
+    border-radius: 8px;
+    width: 95%;
+
+}
+
+.btn-save {
+    background-color: #7422DD;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 11px;
+    border-radius: 8px;
+    width: 95%;
+}
+
+.btn-delete:hover,
+.btn-save:hover {
+    opacity: 0.9;
+
+}
+
+.Dotted3 {
+    position: absolute;
+    top: 53%;
+    left: 210px;
+    z-index: 1;
+}
+
+.Dotted3 img {
+    width: 100%;
+}
+
+.heading4 {
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.heading412 i {
+    color: rgb(83, 82, 82);
+}
+
+.heading42 {
+    padding-top: 175px;
+}
+
+.heading42 h2 {
+    font-family: Custom;
+}
+
+.heading42 h2 span {
+    font-weight: 800;
+    font-family: Custom;
+    color: #7422DD;
+}
+
+.heading42 h6 {
+    font-weight: 350;
+    font-size: 1.34vw;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.heading41 {
+    background-image: url(Images/halogens-yellow4.png), url(Images/halogens-purple4.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 400px 450px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.heading411 h6 {
+    font-size: 12px;
+    color: rgb(102, 101, 101);
+    font-family: Custom;
+    margin-bottom: 3px;
+}
+
+.heading411 input {
+    font-size: 14px;
+    color: rgb(28, 28, 28);
+    padding: 2px 0px;
+    font-family: Custom;
+}
+
+.heading411 input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.heading412 button {
+    color: #7422DD;
+    background-color: rgb(224, 188, 224);
+    padding: 5px 8px;
+    font-size: 13px;
+    font-family: Custom;
+}
+
+.heading412 button:hover {
+    color: #7422DD;
+    background-color: rgb(224, 188, 224);
+}
+
+.heading412 h6 {
+    font-size: 12px;
+    color: rgb(102, 101, 101);
+    font-family: Custom;
+    margin-bottom: 3px;
+}
+
+.INPUTS {
+    border: 2px solid #e5dcdc;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.inputs3 textarea {
+    font-size: 14px;
+    color: rgb(28, 28, 28);
+    padding: 2px 0px;
+    font-family: Custom;
+}
+
+.inputs3 textarea:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.inputs3 input {
+    font-size: 14px;
+    color: rgb(28, 28, 28);
+    padding: 2px 0px;
+    font-family: Custom;
+}
+
+.inputs3 input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-2 button {
+    color: #7422DD;
+    background-color: rgb(224, 188, 224);
+    padding: 5px 8px;
+    font-size: 13px;
+    width: 30%;
+    font-family: Custom;
+}
+
+.btn-2 button:hover {
+    color: #7422DD;
+    background-color: rgb(224, 188, 224);
+}
+
+.INPUTS:focus-within {
+    border-color: #7422DD;
+}
+
+.INPUTS:focus-within h6 {
+    color: #7422DD;
+}
+
+.Dotted4 {
+    position: absolute;
+    top: 72%;
+    left: 210px;
+}
+
+.Dotted4 img {
+    width: 100%;
+}
+
+.bulky-bg {
+    position: relative;
+    z-index: 1;
+}
+
+.bulky-bg::before {
+    content: '';
+    position: absolute;
+    top: 85.5%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('Images/bulkybackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.heading5 {
+    justify-content: space-between;
+}
+
+.heading51 {
+    padding-top: 140px;
+}
+
+
+.heading51 h2 {
+    font-family: Custom;
+}
+
+.heading51 h2 span {
+    font-weight: 800;
+    font-family: Custom;
+    color: #7422DD;
+}
+
+.heading51 h6 {
+    font-weight: 350;
+    font-size: 1.34vw;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.heading52 {
+    background-image: url(Images/halogens-yellow5.png), url(Images/halogens-purple5.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 350px 450px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    font-family: Mysatoshi;
+}
+
+.heading521 {
+    background-color: white;
+    border: 1px solid rgb(225, 223, 223);
+    border-radius: 10px;
+}
+
+.line img {
+    width: 100%;
+    height: 80px;
+}
+
+.upload button {
+    width: 25%;
+}
+
+#scrollable-container {
+    max-height: 173px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#scrollable-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+#scrollable-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+#scrollable-container::-webkit-scrollbar-thumb {
+    background-color: #7422DD;
+    border-radius: 10px;
+    border: 2px solid #f1f1f1;
+}
+
+
+.img-box {
+    position: relative;
+}
+
+.img-box img {
+    border: 2px solid transparent;
+    border-radius: 3px;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+/* Border & radius on hover */
+.img-box:hover img {
+    border-color: #7422DD;
+    border-radius: 8px;
+}
+
+/* Hide button group by default */
+.img-box .crossyes {
+    position: absolute;
+    bottom: 5px;
+    right: 8px;
+    display: none;
+    gap: 2px;
+}
+
+/* Show on hover */
+.img-box:hover .crossyes {
+    display: flex;
+}
+
+/* Button style */
+.crossyes button {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 7px;
+}
+
+.followers {
+    background-color: #F8F8F8;
+}
+
+.followers h1 {
+    font-family: Satoshi;
+    background: linear-gradient(270deg, #C43FDA -1.73%, #823DDA 53.81%, #6A55E5 103.93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.followers h6 {
+    font-family: MYFONT;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.reviews {
+    background-image:
+        url('Images/bg-left.png'),
+        url('Images/bg-right.png'),
+        url('Images/globe-bg.png');
+
+    background-repeat: no-repeat, no-repeat, no-repeat;
+
+    background-position:
+        left 50%,
+        right 50%,
+        center center;
+
+    background-size:
+        13% 100%,
+        13% 100%,
+        90% 90%;
+
+    margin-top: 80px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.reviews h1 {
+    font-family: Custom;
+    color: #1C1340;
+    text-align: center;
+}
+
+.profile {
+    background-color: white;
+    border: 1px solid rgb(225, 222, 222);
+    border-radius: 8px;
+    font-family: MYFONT;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+.profile img {
+    width: 100px;
+    margin-bottom: 25px;
+}
+
+.profile h6 {
+    font-size: 15px;
+}
+
+.profile-img img {
+    width: 100%;
+}
+
+.smallh6 h6 {
+    font-size: 13px;
+    color: rgb(52, 50, 50);
+}
+
+.smallh6 h5 {
+    font-size: 16px;
+    font-family: Custom;
+}
+
+.Review {
+    gap: 20px;
+    justify-content: center;
+}
+
+.Usage {
+    justify-content: center;
+}
+
+.Usage h1 {
+    font-family: Custom;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Usage h6 {
+    font-family: MYFONT;
+    text-align: center;
+}
+
+.Usage h5 {
+    font-family: Satoshi;
+    text-align: center;
+    font-size: 16px;
+}
+
+.Usage img {
+    width: 50px;
+}
+
+.pricing-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    overflow: hidden;
+    position: relative;
+    font-family: MYFONT;
+}
+
+/* Header with pricing cards */
+.pricing-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    position: relative;
+}
+
+.pricing-card-button {
+    padding: 32px 24px 24px;
+    text-align: start;
+    position: relative;
+    background: white;
+    align-content: end;
+}
+
+.pricing-card-button.featured {
+    background: #8b5cf6;
+    color: white;
+    position: relative;
+}
+
+.pricing-card {
+    padding: 32px 24px 24px;
+    text-align: center;
+    position: relative;
+    background: white;
+    font-family: Custom;
+}
+
+.pricing-card.featured {
+    background: #8b5cf6;
+    color: white;
+    position: relative;
+}
+
+.best-value-badge {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #8b5cf6;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.plan-name {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    color: #8b5cf6;
+}
+
+.pricing-card.featured .plan-name {
+    color: white;
+}
+
+.pricing-card-button.featured .plan-name {
+    color: white;
+}
+
+.original-price {
+    font-size: 18px;
+    color: #94a3b8;
+    margin-bottom: 2px;
+    text-decoration: line-through;
+}
+
+
+.pricing-card.featured .original-price {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.pricing-card-button.featured .original-price {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.current-price {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 16px;
+    line-height: 1;
+}
+
+.pricing-card.featured .current-price {
+    color: white;
+}
+
+.pricing-card-button.featured .current-price {
+    color: white;
+}
+
+/* Toggle buttons */
+
+
+.toggle-btn {
+    padding: 6px 16px;
+    border: none;
+    background: #f1f5f9;
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+}
+
+.toggle-btn:first-child {
+    border-radius: 16px 0 0 16px;
+}
+
+.toggle-btn:last-child {
+    border-radius: 0 16px 16px 0;
+}
+
+.toggle-btn.active {
+    background: #8b5cf6;
+    color: white;
+}
+
+/* Features table */
+.features-section {
+    padding: 0;
+    font-family: MYFONT;
+}
+
+.feature-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    border-bottom: 1px solid #f1f5f9;
+    align-items: center;
+    min-height: 56px;
+}
+
+.feature-row:last-child {
+    border-bottom: none;
+}
+
+.feature-name {
+    padding: 16px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.feature-name i {
+    color: rgb(121, 120, 120);
+}
+
+.feature-value {
+    padding: 16px 24px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748b;
+}
+
+
+
+.info-icon {
+    color: #cbd5e1;
+    font-size: 12px;
+}
+
+.check-icon {
+    color: black;
+    font-size: 16px;
+}
+
+.cross-icon {
+    color: #e2e8f0;
+    font-size: 16px;
+}
+
+.coming-soon {
+    background: #eeedf0;
+    color: #7422DD;
+    border: 1px solid #7422DD;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 8px;
+}
+
+/* CTA Buttons */
+.cta-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 24px 0;
+    border-top: 1px solid #f1f5f9;
+}
+
+.cta-button {
+    margin: 0 24px;
+    padding: 12px 24px;
+    border: 2px solid #8b5cf6;
+    background: transparent;
+    color: #8b5cf6;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cta-button.featured {
+    background: #8b5cf6;
+    color: white;
+}
+
+.cta-button:hover {
+    background: #8b5cf6;
+    color: white;
+    transform: translateY(-1px);
+}
+
+.cta-button.featured:hover {
+    background: #7c3aed;
+}
+
+/* Trial info */
+.trial-info {
+    text-align: center;
+    padding: 20px 24px;
+    color: #8b5cf6;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pricing-container {
+        margin: 0 10px;
+    }
+
+    .pricing-header {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        position: relative;
+    }
+
+    .pricing-card {
+        padding: 24px;
+    }
+
+    .pricing-card-button {
+        padding: 24px;
+    }
+
+    .billing-toggle {
+        position: static;
+        justify-content: center;
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+
+    .feature-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 16px 0;
+    }
+
+    .feature-name {
+        padding: 0 24px;
+        border-bottom: 1px solid #f1f5f9;
+        padding-bottom: 12px;
+    }
+
+    .feature-value {
+        padding: 4px 24px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .feature-value:before {
+        content: attr(data-plan);
+        font-weight: 500;
+        color: #8b5cf6;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    .cta-section {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .cta-button {
+        margin: 0 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .pricing-card {
+        padding: 20px 16px;
+    }
+
+    .pricing-card-button {
+        padding: 20px 16px;
+    }
+
+    .current-price {
+        font-size: 28px;
+    }
+
+    .feature-name,
+    .feature-value {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .cta-button {
+        margin: 0 16px;
+        padding: 10px 20px;
+    }
+
+    .trial-info {
+        padding: 16px;
+        font-size: 13px;
+    }
+}
+
+.footer {
+    background-color: #F8F8F8;
+    font-family: Custom;
+}
+
+.footer img {
+    width: 110px;
+}
+
+.footer h5 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer li {
+    list-style: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.footer h6 {
+    font-size: 14px;
+}
+
+.footer li a {
+    text-decoration: none;
+    color: rgb(26, 25, 25);
+}
+
+.footer i {
+    font-size: large;
+    margin: 0px 8px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(64, 62, 62);
+    font-size: 14px;
+    margin: 0px 10px;
+}
+
+.footer2 {
+    font-family: MYFONT;
+}
+
+
+
+
+
+/* MOBIle view upto 320px to 576px */
+@media(min-width:320px) and (max-width:576px) {
+    .heroSection h4 {
+        font-size: 6vw;
+        font-weight: 500;
+        font-family: Custom;
+    }
+
+    .hero-content {
+        font-size: 15px;
+        justify-content: start;
+        text-align: start;
+    }
+
+    .carousel-caption-text {
+        font-size: 3.2vw;
+    }
+
+    .carousel-card.active::before {
+        width: 200%;
+        height: 160%;
+        left: 50%;
+        top: 50%;
+    }
+
+    .carousel-track {
+        padding-top: 5%;
+        display: flex;
+        transition: transform 0.5s ease;
+        will-change: transform;
+    }
+
+    .section2 h1 {
+        font-family: Custom;
+        font-weight: 500;
+        font-size: 4.7vw;
+    }
+
+    .section2 h6 {
+        font-family: MYFONT;
+        font-size: 13px;
+        margin: 10px 10px 30px 10px;
+    }
+
+    .heading1 {
+        padding-top: 40px;
+    }
+
+    .footer i {
+        font-size: 18px;
+        margin: 10px 8px 0px 8px;
+    }
+
+    .footer2 a {
+        text-align: center;
+        padding: 0px 5px;
+        font-size: 14px;
+    }
+
+    .footer a {
+        text-decoration: none;
+        color: rgb(64, 62, 62);
+        font-size: 14px;
+        margin: 0px;
+    }
+
+    .footer h6 {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .input1 {
+        background-image: url(Images/halogens-yellow.png), url(Images/halogens-purple.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        min-height: 280px;
+    }
+
+    .Dotted {
+        position: absolute;
+        top: 273px;
+        left: 15%;
+    }
+
+    .Dotted img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .heading21 {
+        background-image: url(Images/halogens-yellow.png), url(Images/halogens-purple.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        min-height: 285px;
+        display: flex;
+        align-items: center;
+    }
+
+    .heading2 {
+        padding-top: 0px;
+    }
+
+    .heading22 {
+        padding-top: 50px;
+    }
+
+    .Dotted2 img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .Dotted2 {
+        position: absolute;
+        top: 725px;
+        left: 18%;
+    }
+
+    .heading31 {
+        padding-top: 65px;
+    }
+
+    .TAB-bg {
+        width: 95% !important;
+    }
+
+    #scrollable-container {
+        scrollbar-width: thin;
+        scrollbar-color: #7422DD #f1f1f1;
+        -webkit-overflow-scrolling: touch;
+        max-height: 210px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    #scrollable-container::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    #scrollable-container::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    #scrollable-container::-webkit-scrollbar-thumb {
+        background-color: #7422DD;
+        border-radius: 10px;
+        border: 2px solid #f1f1f1;
+    }
+
+    .Dotted3 img {
+        width: 100%;
+        height: 190px;
+    }
+
+    .Dotted3 {
+        position: absolute;
+        top: 49%;
+        left: 16%;
+        z-index: 1;
+    }
+
+    .heading41 {
+        background-image: url(Images/halogens-yellow4.png), url(Images/halogens-purple4.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 263px 413px;
+        min-height: 470px;
+        display: flex;
+        align-items: center;
+    }
+
+    .heading42 {
+        padding-top: 140px;
+    }
+
+    .Dotted4 img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .Dotted4 {
+        position: absolute;
+        top: 73%;
+        left: 17%;
+    }
+
+    .heading51 {
+        padding-top: 40px;
+    }
+
+    .heading521 {
+        background-color: white;
+        border: 1px solid rgb(225, 223, 223);
+        border-radius: 10px;
+        width: 100%;
+    }
+}
+
+
+@media(min-width:320px) and (max-width:420px) {
+    .Products {
+        flex: 1 1 100%;
+        max-width: 100%;
+        aspect-ratio: 1 / 1;
+        background-color: #EFEFEF;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 12px;
+        padding-top: 10px;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+    }
+
+    .sell-products {
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .section3 h1 {
+        font-family: Custom;
+        font-weight: 500;
+        font-size: 5.2vw;
+        text-align: center;
+    }
+
+    .sub-31 h3 {
+        text-align: start;
+        font-family: Custom;
+        font-size: 4.5vw;
+    }
+
+    .Clothing {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .C-B {
+        flex: 1 1 100%;
+        max-width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .smallh6 h5 {
+        font-size: 16px;
+        font-family: Custom;
+        padding-top: 5px;
+    }
+
+    .VIEWS h1 {
+        font-size: 25px;
+    }
+
+    .heading1 h6 {
+        font-weight: 350;
+        font-size: 4vw;
+        margin-top: 15px;
+    }
+
+    .heading22 h6 {
+        font-weight: 350;
+        font-size: 4vw;
+        margin-top: 15px;
+    }
+
+    .heading31 h6 {
+        font-weight: 350;
+        font-size: 4vw;
+        margin-top: 15px;
+    }
+
+    .heading42 h6 {
+        font-weight: 350;
+        font-size: 4vw;
+        margin-top: 15px;
+    }
+
+    .heading51 h6 {
+        font-weight: 350;
+        font-size: 4vw;
+        margin-top: 15px;
+    }
+
+    .heading52 {
+        background-image: url(Images/halogens-yellow5.png), url(Images/halogens-purple5.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 275px 500px;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        font-family: Mysatoshi;
+    }
+
+    .line img {
+        width: 100%;
+        height: 100px;
+    }
+
+    .upload button {
+        width: 30%;
+    }
+
+    .pricing-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricing-header> :nth-child(1) {
+        order: 4;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing-header> :nth-child(2) {
+        order: 1;
+    }
+
+    .pricing-header> :nth-child(3) {
+        order: 2;
+    }
+
+    .pricing-header> :nth-child(4) {
+        order: 3;
+    }
+
+
+    .pricing-header>* {
+        width: 100%;
+    }
+
+    .heroSection h6 {
+        font-family: Mysatoshi;
+        text-align: justify;
+        text-align-last: center;
+        font-size: 15px;
+    }
+
+    .carousel-card {
+        flex: 0 0 34.1%;
+        padding: 8px;
+    }
+
+    .btn-2 button {
+        color: #7422DD;
+        background-color: rgb(224, 188, 224);
+        padding: 5px 8px;
+        font-size: 13px;
+        width: 42%;
+        font-family: Custom;
+    }
+}
+
+
+@media(min-width:420px) and (max-width:576px) {
+    .Products {
+        flex: 1 1 47%;
+        max-width: 47%;
+        aspect-ratio: 1 / 1;
+        background-color: #EFEFEF;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 12px;
+        padding-top: 10px;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+    }
+
+    .heroSection h6 {
+        font-family: Mysatoshi;
+        text-align: justify;
+        text-align-last: center;
+    }
+
+    .carousel-card {
+        flex: 0 0 34%;
+        padding: 8px;
+    }
+
+    .sell-products {
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .section3 h1 {
+        font-family: Custom;
+        font-weight: 500;
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .sub-31 h3 {
+        text-align: start;
+        font-family: Custom;
+        font-size: 4vw;
+    }
+
+    .Clothing {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .C-B {
+        flex: 1 1 45%;
+        max-width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .smallh6 h5 {
+        font-size: 16px;
+        font-family: Custom;
+        padding-top: 10px;
+    }
+
+    .profile-img img {
+        width: 80%;
+    }
+
+    .heading1 h6 {
+        font-weight: 350;
+        font-size: 2.5vw;
+        margin-top: 15px;
+    }
+
+    .heading22 h6 {
+        font-weight: 350;
+        font-size: 2.5vw;
+        margin-top: 15px;
+    }
+
+    .heading31 h6 {
+        font-weight: 350;
+        font-size: 2.5vw;
+        margin-top: 15px;
+    }
+
+    .heading42 h6 {
+        font-weight: 350;
+        font-size: 2.5vw;
+        margin-top: 15px;
+    }
+
+    .heading51 h6 {
+        font-weight: 350;
+        font-size: 2.5vw;
+        margin-top: 15px;
+    }
+
+    .pricing-header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        gap: 20px;
+        position: relative;
+    }
+
+    .pricing-header> :nth-child(1) {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        text-align: center;
+    }
+
+    .pricing-header> :nth-child(2),
+    .pricing-header> :nth-child(3),
+    .pricing-header> :nth-child(4) {
+        grid-row: 1;
+    }
+
+    .billing-toggle {
+        position: static;
+        justify-content: center;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+
+    .line img {
+        width: 100%;
+        height: 120px;
+    }
+
+    #scrollable-container {
+        scrollbar-width: thin;
+        scrollbar-color: #7422DD #f1f1f1;
+        -webkit-overflow-scrolling: touch;
+        max-height: 210px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    #scrollable-container::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    #scrollable-container::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    #scrollable-container::-webkit-scrollbar-thumb {
+        background-color: #7422DD;
+        border-radius: 10px;
+        border: 2px solid #f1f1f1;
+    }
+
+}
+
+
+
+
+/*  VIEW 576px to 991px */
+@media (min-width:576px) and (max-width:768px) {
+    .heroSection h4 {
+        font-size: 4vw;
+        font-weight: 500;
+        font-family: Custom;
+    }
+
+    .heroSection h6 {
+        font-family: Mysatoshi;
+        text-align: justify;
+        text-align-last: center;
+    }
+
+    .hero-content {
+        font-size: 15px;
+        justify-content: start;
+        text-align: center;
+    }
+
+    .section2 h6 {
+        font-family: MYFONT;
+        font-size: 1.9vw;
+        margin: 10px 0px 30px 0px;
+    }
+
+    .section2 h1 {
+        font-family: Custom;
+        font-weight: 500;
+        font-size: 4vw;
+    }
+
+    .Products {
+        flex: 1 1 30%;
+        max-width: 30%;
+        aspect-ratio: 1 / 1;
+        background-color: #EFEFEF;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 12px;
+        padding-top: 10px;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+    }
+
+    .sell-products {
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .section3 h1 {
+        font-family: Custom;
+        font-weight: 500;
+        font-size: 3.8vw;
+    }
+
+    .sub-31 h3 {
+        text-align: start;
+        font-family: Custom;
+        font-size: 2.8vw;
+    }
+
+    .sub-31 h3 {
+        text-align: start;
+        font-family: Custom;
+        font-size: 3.3vw;
+    }
+
+    .sub-32 a {
+        color: #7422DD;
+        text-decoration: none;
+        font-size: 2.5vw;
+    }
+
+    .heading1 {
+        padding-top: 50px;
+    }
+
+    .heading1 h2 {
+        font-family: Custom;
+        font-size: 4vw;
+    }
+
+    .input1 {
+        background-image: url(Images/halogens-yellow.png), url(Images/halogens-purple.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        min-height: 250px;
+    }
+
+    .heading1 h6 {
+        font-weight: 350;
+        font-size: 2vw;
+        margin-top: 15px;
+        text-align: justify;
+    }
+
+    .Dotted {
+        position: absolute;
+        top: 175px;
+        left: 100px;
+    }
+
+    .heading2 {
+        padding-top: 0px;
+    }
+
+    .heading21 {
+        background-image: url(Images/halogens-yellow.png), url(Images/halogens-purple.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+        min-height: 290px;
+        display: flex;
+        align-items: center;
+    }
+
+    .heading22 {
+        padding-top: 107px;
+    }
+
+    .heading22 h2 {
+        font-family: Custom;
+        font-size: 4vw;
+    }
+
+    .heading22 h6 {
+        font-weight: 350;
+        font-size: 2vw;
+        margin-top: 15px;
+    }
+
+    .Dotted2 {
+        position: absolute;
+        top: 485px;
+        left: 115px;
+    }
+
+    .heading32 {
+        background-image: url(Images/halogens-yellow3.png), url(Images/halogens-purple3.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+    }
+
+    .TAB-bg {
+        width: 85% !important;
+    }
+
+    .heading31 h2 {
+        font-family: Custom;
+        font-size: 3.8vw;
+    }
+
+    .heading31 h6 {
+        font-weight: 350;
+        font-size: 2vw;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+
+    .heading31 {
+        padding-top: 180px;
+    }
+
+    .Dotted3 {
+        position: absolute;
+        top: 43%;
+        left: 135px;
+        z-index: 1;
+    }
+
+    .btn-2 button {
+        color: #7422DD;
+        background-color: rgb(224, 188, 224);
+        padding: 5px 8px;
+        font-size: 12px;
+        width: 45%;
+        font-family: Custom;
+    }
+
+    .heading412 button {
+        color: #7422DD;
+        background-color: rgb(224, 188, 224);
+        padding: 5px 8px;
+        font-size: 12px;
+        font-family: Custom;
+    }
+
+    .heading41 {
+        background-image: url(Images/halogens-yellow4.png), url(Images/halogens-purple4.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 263px 413px;
+        min-height: 470px;
+        display: flex;
+        align-items: center;
+    }
+
+    .heading42 h2 {
+        font-family: Custom;
+        font-size: 3.5vw;
+    }
+
+    .heading42 h6 {
+        font-weight: 350;
+        font-size: 2vw;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+
+    .heading42 {
+        padding-top: 185px;
+    }
+
+    .Dotted4 {
+        position: absolute;
+        top: 61%;
+        left: 110px;
+    }
+
+    .Dotted4 {
+        position: absolute;
+        top: 72%;
+        left: 110px;
+    }
+
+    .heading52 {
+        background-image: url(Images/halogens-yellow5.png), url(Images/halogens-purple5.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 249px 450px;
+        min-height: 440px;
+        display: flex;
+        align-items: center;
+        font-family: Mysatoshi;
+    }
+
+    .heading51 h2 {
+        font-family: Custom;
+        font-size: 4vw;
+    }
+
+    .heading51 h6 {
+        font-weight: 350;
+        font-size: 2vw;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+
+   
+    .footer i {
+        font-size: large;
+        margin: 0px 8px;
+    }
+
+    .footer2 a {
+        text-align: center;
+        padding: 0px 4px;
+       
+    }
+       .footer h6 {
+        font-size: 13px;
+        margin-left: 15px;
+       margin-top:2px;
+    }
+   #scrollable-container {
+    scrollbar-width: thin; 
+    scrollbar-color: #7422DD #f1f1f1; 
+    -webkit-overflow-scrolling: touch;
+     max-height: 210px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+    #scrollable-container::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    #scrollable-container::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    #scrollable-container::-webkit-scrollbar-thumb {
+        background-color: #7422DD;
+        border-radius: 10px;
+        border: 2px solid #f1f1f1;
+    }
+}
+
+
+
+
+
+@media (min-width:768px) and (max-width:991px) {
+    .heroSection h4 {
+        font-size: 4vw;
+        font-weight: 500;
+        font-family: Custom;
+    }
+
+    .heroSection h6 {
+        font-family: Mysatoshi;
+        text-align: justify;
+        text-align-last: center;
+    }
+
+    .hero-content {
+        font-size: 15px;
+        justify-content: start;
+        text-align: center;
+    }
+
+    .section2 h6 {
+        font-family: MYFONT;
+        font-size: 1.7vw;
+        margin: 10px 0px 30px 0px;
+    }
+
+    .section2 h1 {
+        font-family: Custom;
+        font-weight: 500;
+        font-size: 3.5vw;
+    }
+
+    .Products {
+        flex: 1 1 31%;
+        max-width: 31%;
+        aspect-ratio: 1 / 1;
+        background-color: #EFEFEF;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        overflow: hidden;
+        border-radius: 12px;
+        padding-top: 10px;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+    }
+
+    .sell-products {
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .section3 h1 {
+        font-family: Custom;
+        font-weight: 500;
+        font-size: 3.5vw;
+    }
+
+    .sub-31 {
+        text-align: start;
+        font-family: Custom;
+        font-size: 3vw;
+    }
+
+    .sub-31 h3 {
+        text-align: start;
+        font-family: Custom;
+        font-size: 2.8vw;
+    }
+
+    .sub-32 a {
+        color: #7422DD;
+        text-decoration: none;
+        font-size: 1.7vw;
+    }
+
+    .Dotted {
+        position: absolute;
+        top: 245px;
+        left: 145px;
+    }
+
+    .heading1 h6 {
+        font-weight: 350;
+        font-size: 1.5vw;
+        margin-top: 15px;
+        text-align: justify;
+    }
+
+    .heading2 {
+        padding-top: 0px;
+    }
+
+    .heading22 h6 {
+        font-weight: 350;
+        font-size: 1.5vw;
+        margin-top: 15px;
+    }
+
+    .heading21 {
+        background-image: url(Images/halogens-yellow.png), url(Images/halogens-purple.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+        min-height: 280px;
+        display: flex;
+        align-items: center;
+    }
+
+    .heading22 {
+        padding-top: 100px;
+    }
+
+    .Dotted2 {
+        position: absolute;
+        top: 615px;
+        left: 175px;
+    }
+
+    .heading22 h2 {
+        font-family: Custom;
+        font-size: 26px;
+    }
+
+    .heading31 {
+        padding-top: 190px;
+    }
+
+    .heading31 h2 {
+        font-family: Custom;
+        font-size: 25px;
+    }
+
+    .heading1 h2 {
+        font-family: Custom;
+        font-size: 26px;
+    }
+
+    .TAB-bg {
+        width: 75% !important;
+    }
+
+    .Dotted3 {
+        position: absolute;
+        top: 50%;
+        left: 170px;
+        z-index: 1;
+    }
+
+    .btn-2 button {
+        color: #7422DD;
+        background-color: rgb(224, 188, 224);
+        padding: 5px 8px;
+        font-size: 13px;
+        width: 37%;
+        font-family: Custom;
+    }
+
+    .heading41 {
+        background-image: url(Images/halogens-yellow4.png), url(Images/halogens-purple4.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+    }
+
+    .heading42 {
+        padding-top: 205px;
+    }
+
+    .heading42 h2 {
+        font-family: Custom;
+        font-size: 24px;
+    }
+
+    .heading42 h6 {
+        font-weight: 350;
+        font-size: 1.5vw;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+
+    .heading31 h6 {
+        font-weight: 350;
+        font-size: 1.5vw;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+
+    .Dotted4 {
+        position: absolute;
+        top: 71%;
+        left: 180px;
+    }
+
+    .Dotted4 img {
+        width: 85%;
+    }
+
+    .line img {
+        width: 100%;
+        height: 100px;
+    }
+
+    #scrollable-container {
+    scrollbar-width: thin; 
+    scrollbar-color: #7422DD #f1f1f1; 
+    -webkit-overflow-scrolling: touch;
+     max-height: 210px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+    #scrollable-container::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    #scrollable-container::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    #scrollable-container::-webkit-scrollbar-thumb {
+        background-color: #7422DD;
+        border-radius: 10px;
+        border: 2px solid #f1f1f1;
+    }
+
+    .heading51 {
+        padding-top: 160px;
+    }
+
+    .heading51 h6 {
+        font-weight: 350;
+        font-size: 1.5vw;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+
+    .heading52 {
+        background-image: url(Images/halogens-yellow5.png), url(Images/halogens-purple5.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 410px 400px;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        font-family: Mysatoshi;
+    }
+
+    .heading5 {
+        transform: translateY(-10%);
+    }
+
+    .bulky-bg::before {
+        content: '';
+        position: absolute;
+        top: 83%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('Images/bulkybackground.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    .smallh6 h6 {
+        font-size: 13px;
+        margin-bottom: 15px;
+        color: rgb(52, 50, 50);
+    }
+
+    .footer i {
+        font-size: large;
+        margin: 0px 4px;
+    }
+     .footer2 a {
+        text-align: center;
+        padding: 0px 4px;
+        font-size: 13px;
+         margin-bottom:10px;
+    }
+}
+
+
+
+
+
+
+
+
+
